@@ -1170,6 +1170,11 @@
       margin-bottom: calc(var(--spacing) * 10);
     }
   }
+  .max-lg\:max-w-\[300px\] {
+    @media (width < 64rem) {
+      max-width: 300px;
+    }
+  }
   .max-lg\:flex-col {
     @media (width < 64rem) {
       flex-direction: column;
@@ -1261,6 +1266,11 @@
   .max-md\:w-full {
     @media (width < 48rem) {
       width: 100%;
+    }
+  }
+  .max-md\:max-w-\[300px\] {
+    @media (width < 48rem) {
+      max-width: 300px;
     }
   }
   .max-md\:flex-1 {
