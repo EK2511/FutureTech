@@ -3,6 +3,16 @@
 
 @custom-variant hover (&:hover);
 
+@layer components {
+    ::-webkit-scrollbar {
+        width: 15px;
+        }
+    ::-webkit-scrollbar-thumb {
+        background-color: #FFD11A;
+    }
+    
+}
+
 @theme {
     --color-yellow55 : #FFD11A ;
     --color-dark08 :#141414 ;
