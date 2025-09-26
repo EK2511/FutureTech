@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FutureTech</title>
+        <!-- normalize file -->
+        <link rel="stylesheet" href="src/normalize.css">
+        <!-- icons file -->
+        <link rel="stylesheet" href="src/all.min.css">
+        <!-- tailwind file -->
+        <link rel="stylesheet" href="src/output.css">
+    </head>
+    <body>
+        <header>
+            <div class="container px-4 mx-auto top_banner flex items-center justify-center gap-1.5 min-h-[60px] bg-dark08">
+                <p class="font-inter text-sm text-grey60 max-md:text-[10px]">Subscribe to our Newsletter For New & latest Blogs and Resources</p>
+                <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+            </div>
+            <div class="container px-10 mx-auto min-h-[100px] head bg-dark10 flex items-center justify-between text-white relative">
+                <img src="imgs/Logo_desktop.png" alt="" class=" max-xl:hidden">
+                <img src="imgs/Logo_laptop.png" alt="" class="max-md:hidden min-xl:hidden">
+                <img src="imgs/Logo_mobile.png" alt="" class="min-md:hidden">
+                <i class="fa-solid fa-bars peer hidden! max-md:block! cursor-pointer ibar"></i>
+                <ul class="flex text-sm capitalize gap-5 max-lg:gap-3.5 max-md:flex-col max-md:left-0 max-md:absolute max-md:top-full max-md:bg-dark15/90 max-md:hidden z-50 peer-hover:flex max-md:w-full max-md:p-2 max-md:gap-2">
+                    <li class="bg-dark08 border-dark20 border-1 py-3 px-4 rounded-[8px] text-white max-md:border-b-2 max-md:border-b-grey50"><a href="">home</a></li>
+                    <li class="text-grey50 py-3 px-4 hover:border-dark20 hover:text-white hover:bg-dark08 transition-all duration-[0.4s] max-md:hover:border-b-2 max-md:hover:border-b-grey50 hover:rounded-[8px] border-transparent border-1 border-b-2 hover:cursor-pointer"><a href="" >news</a></li>
+                    <li class="text-grey50 py-3 px-4 hover:border-dark20 hover:text-white hover:bg-dark08 transition-all duration-[0.4s] max-md:hover:border-b-2 max-md:hover:border-b-grey50 hover:rounded-[8px] border-transparent border-1 border-b-2 hover:cursor-pointer"><a href="" >podcasts</a></li>
+                    <li class="text-grey50 py-3 px-4 hover:border-dark20 hover:text-white hover:bg-dark08 transition-all duration-[0.4s] max-md:hover:border-b-2 max-md:hover:border-b-grey50 hover:rounded-[8px] border-transparent border-1 border-b-2 hover:cursor-pointer"><a href="" >resources</a></li>
+                    <li class="hidden max-md:block text-grey50 py-3 px-4 hover:border-dark20 hover:text-white hover:bg-dark08 transition-all duration-[0.4s]  max-md:hover:border-b-2 max-md:hover:border-b-grey50 hover:rounded-[8px] border-transparent border-1 border-b-2 hover:cursor-pointer"><a href="">contact us</a></li>
+                </ul>
+                <div class="max-md:hidden button border-1 border-yellow55 py-4 px-5 font-inter font-medium capitalize rounded-[10px] transition-all duration-[0.4s] hover:bg-yellow55 before:w- before:h-2 relative before:absolute before:bg-yellow55 before:bottom-0 before:left-0 overflow-hidden hover:text-dark08 shadow-[0_0_5px_#FFD11A] hover:shadow-[0_0_15px_#FFD11A] hover:cursor-pointer">
+                    <a href="" >contact us</a>
+                </div>
+            </div>
+        </header>
+        <section class="home container mx-auto  bg-dark08 ">
+            <div class="content1 flex max-lg:flex-wrap">
+                <div class="left_col max-w-[840px] w-full">
+                    <div class="text mt-10 max-md:mt-0 p-16 pl-10 max-md:py-10 max-md:px-8 border-b-1 border-b-grey50/20">
+                        <p class="text-dark40 text-2xl max-xl:text-xl max-md:text-lg capitalize font-kumbh font-medium">Your Journey to Tomorrow Begins Here</p>
+                        <h2 class="text-white text-[55px]/tight max-xl:text-[45px]/tight max-md:text-2xl max-w-[700px] w-full mb-5 mt-4 font-kumbh font-medium">Explore the Frontiers of Artificial Intelligence</h2>
+                        <p class="text-grey50 text-sm/snug max-xl:text-[12px]/snug max-w-[720px] w-full font-inter mb-8 max-md:mb-0">
+                            Welcome to the epicenter of AI innovation. FutureTech AI News is your passport to a world where machines think, learn, and reshape the future. Join us on this visionary expedition into the heart of AI.
+                        </p>
+                    </div>
+                    <div class="boxs flex justify-start ">
+                        <div class="box py-12 pr-24 pl-10 flex-1  max-md:px-8 max-sm:pr-3  max-md:py-8">
+                            <div class="num flex items-center">
+                                <p class="text-white text-3xl max-sm:text-2xl font-inter font-semibold">300</p>
+                                <i class="fa-solid fa-plus text-lg max-sm:text-base text-yellow55"></i>
+                            </div>
+                            <p class="text-[12px] text-grey60 mt-3">Resources available</p>
+                        </div>
+                        <div class="box py-12 pr-36 pl-8 border-x-1 border-x-grey50/20 flex-1  max-md:px-8 max-sm:pr-3 max-md:py-8">
+                            <div class="num flex items-center">
+                                <p class="text-white text-3xl max-sm:text-2xl font-inter font-semibold">12k</p>
+                                <i class="fa-solid fa-plus text-lg max-sm:text-base text-yellow55"></i>
+                            </div>
+                            <p class="text-[12px] text-grey60 mt-3">Total Downloads</p>
+                        </div>
+                        <div class="box py-12 pr-20 pl-8 flex-1 max-md:px-8 max-sm:pr-3 max-md:py-8">
+                            <div class="num flex items-center">
+                                <p class="text-white text-3xl max-sm:text-2xl font-inter font-semibold">10k</p>
+                                <i class="fa-solid fa-plus text-lg max-sm:text-base text-yellow55"></i>
+                            </div>
+                            <p class="text-[12px] text-grey60 mt-3">Active Users</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right_col max-md:px-10  border-l-1 border-l-grey50/20 max-lg:border-none relative overflow-hidden">
+                    <img src="imgs/home.png" class="w-full max-w-[600px] rotate-30 absolute -left-10 -top-10" alt="">
+                    <div class="faces flex mt-72 max-xl:w-[150px] ml-16 max-md:ml-0 max-xl:ml-12 rounded-full bg-dark10 w-fit justify-center py-2" >
+                        <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden translate-x-4">
+                            <img src="imgs/formal_home1.png" class="w-12" alt="">
+                        </div>
+                        <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden z-20 translate-x-1">
+                            <img src="imgs/formal_home2.png" class="w-12" alt="">
+                        </div>
+                        <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden z-30 -translate-x-2">
+                            <img src="imgs/formal_home3.png" class="w-12" alt="">
+                        </div>
+                        <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden z-40 -translate-x-4">
+                            <img src="imgs/formal_home4.png" class="w-12" alt="">
+                        </div>
+                    </div>
+                    <div class="text ml-16 max-xl:ml-12 max-md:ml-0">
+                        <p class="font-inter font-medium text-xl text-white mt-7 max-xl:text-lg">Explore 1000+ resources</p>
+                        <p class="text-sm max-xl:text-[12px] font-inter text-grey60 mt-3 mb-8">Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                        <div class="btn"></div>
+                        <div class="btn mb-7">
+                            <button class="border-dark15 p-4 max-xl:p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55 hover:shadow-btn hover:translate-x-1 hover:-translate-1">
+                                <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">Explore Resources</p>
+                                <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content2 flex max-md:flex-col">
+                <div class="box flex-1 pl-10 py-12 pr-12 max-lg:pr-6 border-y-1 border-y-grey50/20 max-md:border-b-transparent">
+                    <i class="fa-solid fa-pen-to-square text-yellow55 text-4xl"></i>
+                    <div class="text flex justify-between items-center mt-4">
+                        <div class="dis">
+                            <p class="font-inter font-medium text-base text-white">Latest News Updates</p>
+                            <p class="font-inter text-sm mt-1.5 text-grey50">Stay Current</p>
+                        </div>
+                        <div class="icon w-12 min-w-12 h-12 bg-yellow55 flex justify-center items-center rounded-full hover:scale-110 hover:shadow-[0_0_5px_#FFD11A] transition-all duration-[0.4s] cursor-pointer">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-black animate-up"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm text-grey60 font-kumbh mt-4">Over 1,000 articles published monthly</p>
+                </div>
+                <div class="box flex-1 py-12 pl-12 pr-12 max-lg:pr-6 border-x-1 border-x-grey50/20 border-y-1 max-md:border-x-0 border-y-grey50/20 max-md:border-b-transparent ">
+                    <i class="fa-solid fa-handshake-angle text-yellow55 text-4xl"></i>
+                    <div class="text flex justify-between items-center mt-4">
+                        <div class="dis">
+                            <p class="font-inter font-medium text-base text-white">Expert Contributors</p>
+                            <p class="font-inter text-sm mt-1.5 text-grey50">Trusted Insights</p>
+                        </div>
+                        <div class="icon w-12 min-w-12 h-12 bg-yellow55 flex justify-center items-center rounded-full hover:scale-110 hover:shadow-[0_0_5px_#FFD11A] transition-all duration-[0.4s] cursor-pointer">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-black animate-up"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm text-grey60 font-kumbh mt-4">50+ renowned AI experts on our team</p>
+                </div>
+                <div class="box flex-1 py-12  pl-12 pr-12 max-lg:pr-6 border-y-1 border-y-grey50/20 max-md:border-b-0">
+                    <i class="fa-solid fa-leaf text-yellow55 text-4xl"></i>
+                    <div class="text flex justify-between items-center mt-4">
+                        <div class="dis">
+                            <p class="font-inter font-medium text-base text-white">Global Readership</p>
+                            <p class="font-inter text-sm mt-1.5 text-grey50">Worldwide Impact</p>
+                        </div>
+                        <div class="icon w-12 min-w-12 h-12 bg-yellow55 flex justify-center items-center rounded-full hover:scale-110 hover:shadow-[0_0_5px_#FFD11A] transition-all duration-[0.4s] cursor-pointer">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-black animate-up"></i>
+                        </div>
+                    </div>
+                    <p class="text-sm text-grey60 font-kumbh mt-4">2 million monthly readers</p>
+                </div>
+            </div>
+        </section>
+        <section class="future container px-10 mx-auto bg-dark10 py-20">
+            <p class="bg-dark20 font-inter font-medium text-white w-fit py-1 px-2.5 text-base max-md:text-[12px] rounded-[4px]">Unlock the Power of</p>
+            <h2 class="font-kumbh font-medium text-5xl max-lg:text-4xl max-md:text-2xl text-white mt-7">FutureTech Features</h2>
+        </section>
+        <section class="blog container mx-auto bg-dark08">
+            <div class="content flex max-lg:flex-col">
+                <div class="text py-20 px-10 pt-24 flex-1 border-r-1 border-r-grey50/20 border-b-1 border-b-grey50/20 ">
+                    <i class="fa-solid fa-microchip text-yellow55 text-5xl"></i>
+                    <h3 class="font-kumbh font-semibold text-3xl max-md:text-2xl text-white mt-10">Future Technology Blog</h3>
+                    <p class="font-inter text-sm text-grey60 mt-5">Stay informed with our blog section dedicated to future technology.</p>
+                </div>
+                <div class="boxs border-b-1 border-b-grey50/20 flex-2 p-16 max-md:p-7 grid gap-5 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] max-xl:grid-cols-[repeat(auto-fill,minmax(250px,1fr))] max-md:grid-cols-1">
+                    <div class="box bg-dark10 border-1 border-dark15 p-8 rounded-xl transition-all duration-[0.4s] hover:scale-[103%] hover:shadow-[0_5px_20px_#FFD11A]">
+                        <p class="font-inter font-medium text-white text-lg">Quantity</p>
+                        <p class="font-inter text-sm text-grey60 mt-3">Over 1,000 articles on emerging tech trends and breakthroughs.</p>
+                    </div>
+                    <div class="box bg-dark10 border-1 border-dark15 p-8 rounded-xl transition-all duration-[0.4s] hover:scale-[103%] hover:shadow-[0_5px_20px_#FFD11A]">
+                        <p class="font-inter font-medium text-white text-lg">Variety</p>
+                        <p class="font-inter text-sm text-grey60 mt-3">Articles cover fields like AI, robotics, biotechnology, and more.</p>
+                    </div>
+                    <div class="box bg-dark10 border-1 border-dark15 p-8 rounded-xl transition-all duration-[0.4s] hover:scale-[103%] hover:shadow-[0_5px_20px_#FFD11A]">
+                        <p class="font-inter font-medium text-white text-lg">Frequency</p>
+                        <p class="font-inter text-sm text-grey60 mt-3">Fresh content added daily to keep you up to date.</p>
+                    </div>
+                    <div class="box bg-dark10 border-1 border-dark15 p-8 rounded-xl transition-all duration-[0.4s] hover:scale-[103%] hover:shadow-[0_5px_20px_#FFD11A]">
+                        <p class="font-inter font-medium text-white text-lg">Authoritative</p>
+                        <p class="font-inter text-sm text-grey60 mt-3">Written by our team of tech experts and industry professionals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content flex max-lg:flex-col">
+                <div class="text py-20 px-10 pt-24 flex-1 border-r-1 border-r-grey50/20 border-b-1 border-b-grey50/20 ">
+                    <i class="fa-solid fa-box text-yellow55 text-5xl"></i>
+                    <h3 class="font-kumbh font-semibold text-3xl max-md:text-2xl text-white mt-10">Research Insights Blogs</h3>
+                    <p class="font-inter text-sm text-grey60 mt-5">Dive deep into future technology concepts with our research section.</p>
+                </div>
+                <div class="boxs border-b-1 border-b-grey50/20 flex-2 p-16 max-md:p-7 grid gap-5 grid-cols-[repeat(auto-fill,minmax(300px,1fr))] max-xl:grid-cols-[repeat(auto-fill,minmax(250px,1fr))] max-md:grid-cols-1">
+                    <div class="box bg-dark10 border-1 border-dark15 p-8 rounded-xl transition-all duration-[0.4s] hover:scale-[103%] hover:shadow-[0_5px_20px_#FFD11A]">
+                        <p class="font-inter font-medium text-white text-lg">Depth</p>
+                        <p class="font-inter text-sm text-grey60 mt-3">500+ research articles for in-depth understanding.</p>
+                    </div>
+                    <div class="box bg-dark10 border-1 border-dark15 p-8 rounded-xl transition-all duration-[0.4s] hover:scale-[103%] hover:shadow-[0_5px_20px_#FFD11A]">
+                        <p class="font-inter font-medium text-white text-lg">Graphics</p>
+                        <p class="font-inter text-sm text-grey60 mt-3">Visual aids and infographics to enhance comprehension.</p>
+                    </div>
+                    <div class="box bg-dark10 border-1 border-dark15 p-8 rounded-xl transition-all duration-[0.4s] hover:scale-[103%] hover:shadow-[0_5px_20px_#FFD11A]">
+                        <p class="font-inter font-medium text-white text-lg">Trends</p>
+                        <p class="font-inter text-sm text-grey60 mt-3">Explore emerging trends in future technology research.</p>
+                    </div>
+                    <div class="box bg-dark10 border-1 border-dark15 p-8 rounded-xl transition-all duration-[0.4s] hover:scale-[103%] hover:shadow-[0_5px_20px_#FFD11A]">
+                        <p class="font-inter font-medium text-white text-lg">Contributors</p>
+                        <p class="font-inter text-sm text-grey60 mt-3">Contributions from tech researchers and academics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="future container px-10 mx-auto bg-dark10 py-20 flex justify-between items-center flex-wrap">
+            <div class="text max-xl:mb-8">
+                <p class="bg-dark20 font-inter font-medium text-white w-fit py-1 px-2.5 text-base max-md:text-[12px] rounded-[4px]">A Knowledge Treasure Trove</p>
+                <h2 class="font-kumbh font-medium text-5xl max-lg:text-4xl max-md:text-2xl text-white mt-7">Explore FutureTech's In-Depth Blog Posts</h2>
+            </div>
+            <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55 hover:shadow-btn hover:translate-x-1 hover:-translate-1">
+                <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">View All Blogs</p>
+                <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+            </button>
+        </section>
+        <section class="posts container mx-auto bg-dark08">
+            <div class="content px-10 flex flex-wrap gap-3 py-10">
+                <div class="box text-center border-1 border-grey50/20 flex-1 rounded-lg group transition-all duration-[0.4s] bg-dark10 hover:scale-105 cursor-pointer flex justify-center items-center">
+                    <p class="font-inter text-sm p-5 transition-all duration-[0.3s] text-white">All</p>
+                </div>
+                <div class="box text-center border-1 border-grey50/20 flex-1 rounded-lg group transition-all duration-[0.4s] hover:bg-dark10 hover:scale-105 cursor-pointer flex justify-center items-center">
+                    <p class="font-inter text-sm text-grey60 p-5 transition-all duration-[0.3s] group-hover:text-white">Quantum Computing</p>
+                </div>
+                <div class="box text-center border-1 border-grey50/20 flex-1 rounded-lg group transition-all duration-[0.4s] hover:bg-dark10 hover:scale-105 cursor-pointer flex justify-center items-center">
+                    <p class="font-inter text-sm text-grey60 p-5 transition-all duration-[0.3s] group-hover:text-white">AI Ethics</p>
+                </div>
+                <div class="box text-center border-1 border-grey50/20 flex-1 rounded-lg group transition-all duration-[0.4s] hover:bg-dark10 hover:scale-105 cursor-pointer flex justify-center items-center">
+                    <p class="font-inter text-sm text-grey60 p-5 transition-all duration-[0.3s] group-hover:text-white">Space Exploration</p>
+                </div>
+                <div class="box text-center border-1 border-grey50/20 flex-1 rounded-lg group transition-all duration-[0.4s] hover:bg-dark10 hover:scale-105 cursor-pointer flex justify-center items-center">
+                    <p class="font-inter text-sm text-grey60 p-5 transition-all duration-[0.3s] group-hover:text-white">Biotechnology</p>
+                </div>
+                <div class="box text-center border-1 border-grey50/20 flex-1 rounded-lg group transition-all duration-[0.4s] hover:bg-dark10 hover:scale-105 cursor-pointer flex justify-center items-center">
+                    <p class="font-inter text-sm text-grey60 p-5 transition-all duration-[0.3s] group-hover:text-white">Renewable Energy</p>
+                </div>
+            </div>
+            <div class="content p-10 flex justify-between border-y-1 border-y-grey50/20 flex-wrap">
+                <div class="box flex gap-3">
+                    <div class="image bg-[#262626] -translate-y-2 rounded-full overflow-hidden h-14">
+                        <img src="imgs/formal_home2.png" class="w-14" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="font-inter font-medium text-white text-sm">John Techson</p>
+                        <p class="font-inter text-[12px] text-grey60 mt-1.5">Quantum Computing</p>
+                    </div>
+                </div>
+                <div class="box w-full max-w-[600px] max-lg:mt-3 max-lg:mb-6">
+                    <p class="text-sm text-grey60 font-inter font-semibold">October 15, 2023</p>
+                    <h3 class="text-xl max-md:text-lg text-white font-inter font-semibold mt-5">The Quantum Leap in Computing</h3>
+                    <p class="text-[12px] text-grey60 font-inter mt-3">Explore the revolution in quantum computing, its applications, and its potential impact on various industries.</p>
+                    <div class="sbox flex gap-1 mt-7">
+                        <div class="minbox rounded-full py-2 group flex items-center p-1 bg-dark10 border-1 border-dark15/30  cursor-pointer min-w-[68px] justify-center">
+                            <i class="fa-solid fa-heart text-dark15 group-hover:text-red-600  transition-all duration-[0.4s] mr-1"></i>
+                            <p class="text-[12px] text-grey60 group-hover:text-white transition-all duration-[0.3s] font-kumbh">24.5k</p>
+                        </div>
+                        <div class="minbox rounded-full py-2 group flex items-center p-1 bg-dark10 border-1 border-dark15/30 cursor-pointer min-w-[68px] justify-center">
+                            <i class="fa-solid fa-comment text-dark15 group-hover:text-blue-300  transition-all duration-[0.4s] mr-1"></i>
+                            <p class="text-[12px] text-grey60 group-hover:text-white transition-all duration-[0.3s] font-kumbh">50</p>
+                        </div>
+                        <div class="minbox rounded-full py-2 group flex items-center p-1 bg-dark10 border-1 border-dark15/30 cursor-pointer min-w-[68px] justify-center">
+                            <i class="fa-solid fa-paper-plane transition-all duration-[0.4s] text-dark15 mr-1 group-hover:text-blue-600"></i>
+                            <p class="text-[12px] text-grey60 group-hover:text-white transition-all duration-[0.3s] font-kumbh">20</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55 hover:shadow-btn hover:translate-x-1 hover:-translate-1 self-center">
+                    <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">View Blog</p>
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+                </button>
+            </div>
+            <div class="content p-10 flex flex-wrap justify-between">
+                <div class="box flex gap-3">
+                    <div class="image bg-[#262626] -translate-y-2 rounded-full overflow-hidden h-14">
+                        <img src="imgs/formal_home3.png" class="w-14" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="font-inter font-medium text-white text-sm">Sarah Ethicist</p>
+                        <p class="font-inter text-[12px] text-grey60 mt-1.5">AI Ethics</p>
+                    </div>
+                </div>
+                <div class="box w-full max-w-[600px] max-lg:mt-3 max-lg:mb-6">
+                    <p class="text-sm text-grey60 font-inter font-semibold">November 5, 2023</p>
+                    <h3 class="text-xl max-md:text-lg text-white font-inter font-semibold mt-5">The Ethical Dilemmas of AI</h3>
+                    <p class="text-[12px] text-grey60 font-inter mt-3">A deep dive into ethical challenges posed by AI, including bias, privacy, and transparency.</p>
+                    <div class="sbox flex gap-1 mt-7">
+                        <div class="minbox rounded-full py-2 group flex items-center p-1 bg-dark10 border-1 border-dark15/30  cursor-pointer min-w-[68px] justify-center">
+                            <i class="fa-solid fa-heart text-dark15 group-hover:text-red-600  transition-all duration-[0.4s] mr-1"></i>
+                            <p class="text-[12px] text-grey60 group-hover:text-white transition-all duration-[0.3s] font-kumbh">32k</p>
+                        </div>
+                        <div class="minbox rounded-full py-2 group flex items-center p-1 bg-dark10 border-1 border-dark15/30  cursor-pointer min-w-[68px] justify-center">
+                            <i class="fa-solid fa-comment text-dark15 group-hover:text-blue-300  transition-all duration-[0.4s] mr-1"></i>
+                            <p class="text-[12px] text-grey60 group-hover:text-white transition-all duration-[0.3s] font-kumbh">72</p>
+                        </div>
+                        <div class="minbox rounded-full py-2 group flex items-center p-1 bg-dark10 border-1 border-dark15/30  cursor-pointer min-w-[68px] justify-center">
+                            <i class="fa-solid fa-paper-plane transition-all duration-[0.4s] text-dark15 mr-1 group-hover:text-blue-600"></i>
+                            <p class="text-[12px] text-grey60 group-hover:text-white transition-all duration-[0.3s] font-kumbh">18</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55 hover:shadow-btn hover:translate-x-1 hover:-translate-1 self-center">
+                    <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">View Blog</p>
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+                </button>
+            </div>
+            <div class="content p-10 flex flex-wrap justify-between border-t-1 border-t-grey50/20">
+                <div class="box flex gap-3">
+                    <div class="image bg-[#262626] -translate-y-2 rounded-full overflow-hidden h-14">
+                        <img src="imgs/formal_home4.png" class="w-14" alt="">
+                    </div>
+                    <div class="text">
+                        <p class="font-inter font-medium text-white text-sm">Astronomer X</p>
+                        <p class="font-inter text-[12px] text-grey60 mt-1.5">Space Exploration</p>
+                    </div>
+                </div>
+                <div class="box w-full max-w-[600px] max-lg:mt-3 max-lg:mb-6">
+                    <p class="text-sm text-grey60 font-inter font-semibold">December 10, 2023</p>
+                    <h3 class="text-xl max-md:text-lg text-white font-inter font-semibold mt-5">The Mars Colonization Challenge</h3>
+                    <p class="text-[12px] text-grey60 font-inter mt-3">Exploring the technical and logistical challenges of human colonization on Mars.</p>
+                    <div class="sbox flex gap-1 mt-7">
+                        <div class="minbox rounded-full py-2 group flex items-center p-1 bg-dark10 border-1 border-dark15/30  cursor-pointer min-w-[68px] justify-center">
+                            <i class="fa-solid fa-heart text-dark15 group-hover:text-red-600  transition-all duration-[0.4s] mr-1"></i>
+                            <p class="text-[12px] text-grey60 group-hover:text-white transition-all duration-[0.3s] font-kumbh">20k</p>
+                        </div>
+                        <div class="minbox rounded-full py-2 group flex items-center p-1 bg-dark10 border-1 border-dark15/30  cursor-pointer min-w-[68px] justify-center">
+                            <i class="fa-solid fa-comment text-dark15 group-hover:text-blue-300  transition-all duration-[0.4s] mr-1"></i>
+                            <p class="text-[12px] text-grey60 group-hover:text-white transition-all duration-[0.3s] font-kumbh">31</p>
+                        </div>
+                        <div class="minbox rounded-full py-2 group flex items-center p-1 bg-dark10 border-1 border-dark15/30  cursor-pointer min-w-[68px] justify-center">
+                            <i class="fa-solid fa-paper-plane transition-all duration-[0.4s] text-dark15 mr-1 group-hover:text-blue-600"></i>
+                            <p class="text-[12px] text-grey60 group-hover:text-white transition-all duration-[0.3s] font-kumbh">12</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55 hover:shadow-btn hover:translate-x-1 hover:-translate-1 self-center">
+                    <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">View Blog</p>
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+                </button>
+            </div>
+        </section>
+        <section class="future container px-10 mx-auto bg-dark10 py-20 flex justify-between items-center flex-wrap">
+            <div class="text max-xl:mb-8">
+                <p class="bg-dark20 font-inter font-medium text-white w-fit py-1 px-2.5 text-base max-md:text-[12px] rounded-[4px]">Your Gateway to In-Depth Information</p>
+                <h2 class="font-kumbh font-medium text-5xl/tight max-lg:text-4xl/tight max-md:text-2xl/tight text-white mt-7 max-w-3xl">Unlock Valuable Knowledge with FutureTech's Resources</h2>
+            </div>
+            <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55 hover:shadow-btn hover:translate-x-1 hover:-translate-1">
+                <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">View All Resources</p>
+                <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+            </button>
+        </section>
+        <section class="resource container mx-auto bg-dark08 ">
+            <div class="content flex max-lg:flex-wrap px-10">
+                <div class="box py-28 max-md:py-20 lg:pr-14 lg:border-r-1 lg:border-r-grey50/20 lg:flex-1">
+                    <i class="fa-solid fa-book text-5xl text-yellow55"></i>
+                    <h3 class="font-kumbh font-semibold text-3xl text-white mt-8">Ebooks</h3>
+                    <p class="text-sm text-grey60 font-inter mt-5 mb-8">Explore our collection of ebooks covering a wide spectrum of future technology topics.</p>
+                    <button class="border-dark15 bg-dark10 w-full p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55 hover:shadow-btn hover:translate-x-1 hover:-translate-1 justify-center">
+                        <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">Download Ebooks Now</p>
+                        <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+                    </button>
+                    <div class="sbox flex gap-3 bg-dark10 border-1 border-dark15 p-5 mt-10 w-fit rounded-lg flex-wrap">
+                        <div class="text w-fit">
+                            <p class="text-grey60 text-sm font-inter">Downloaded By</p>
+                            <p class="text-white text-lg font-inter font-semibold mt-1">10k + Users</p>
+                        </div>
+                        <div class="faces flex max-xl:w-[150px] rounded-xl bg-dark08 w-fit justify-center py-2" >
+                            <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden translate-x-4  max-h-12">
+                                <img src="imgs/formal_home1.png" class="w-12" alt="">
+                            </div>
+                            <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden z-20 translate-x-1  max-h-12">
+                                <img src="imgs/formal_home2.png" class="w-12" alt="">
+                            </div>
+                            <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden z-30 -translate-x-2 max-h-12">
+                                <img src="imgs/formal_home3.png" class="w-12" alt="">
+                            </div>
+                            <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden z-40 -translate-x-4 max-h-12">
+                                <img src="imgs/formal_home4.png" class="w-12" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box lg:py-20 lg:pl-14 lg:flex-2">
+                    <div class="text flex justify-between items-center mb-5 flex-wrap">
+                        <p class="text-white font-inter font-semibold text-lg md:flex-1">Variety of Topics</p>
+                        <p class="text-grey60 font-inter text-[12px] leading-5 md:flex-2 max-md:mt-2">
+                            Topics include AI in education (25%), renewable energy (20%), healthcare (15%), space exploration (25%), and biotechnology (15%).
+                        </p>
+                    </div>
+                    <img src="imgs/Image.webp" class="rounded-xl" alt="">
+                    <div class="minbox flex mt-5 gap-3 flex-wrap max-md:flex-col">
+                        <div class="inside max-md:flex-1 p-5 md:w-fit bg-dark10 border-1 border-dark15 rounded-xl">
+                            <p class="font-inter text-[12px] text-grey60">Total Ebooks</p>
+                            <p class="text-white font-inter font-medium text-sm mt-1">Over 100 ebooks</p>
+                        </div>
+                        <div class="inside flex-2 w-full flex flex-wrap gap-5 justify-between p-5 bg-dark10 border-1 border-dark15 rounded-xl">
+                            <div class="text">
+                                <p class="font-inter text-[12px] text-grey60">Download Formats</p>
+                                <p class="text-white font-inter font-medium text-sm mt-1">PDF format for access.</p>
+                            </div>
+                            <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55">
+                                <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">Preview</p>
+                                <i class="fa-solid fa-eye text-yellow55"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="full p-5 bg-dark10 border-1 border-dark15 rounded-xl w-full my-5 max-lg:mb-10">
+                        <p class="font-inter text-[12px] text-grey60">Average Author Expertise</p>
+                        <p class="text-white font-inter font-medium text-sm mt-1">Ebooks are authored by renowned experts with an average of 15 years of experience</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content flex max-lg:flex-wrap border-t-1 border-grey50/20 px-10">
+                <div class="box py-28 max-md:py-20 lg:pr-14 lg:border-r-1 lg:border-r-grey50/20 lg:flex-1 ">
+                    <i class="fa-solid fa-note-sticky text-5xl text-yellow55"></i>
+                    <h3 class="font-kumbh font-semibold text-3xl text-white mt-8">Whitepapers</h3>
+                    <p class="text-sm text-grey60 font-inter mt-5 mb-8">Dive into comprehensive reports and analyses with our collection of whitepapers. </p>
+                    <button class="border-dark15 bg-dark10 w-full p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55 hover:shadow-btn hover:translate-x-1 hover:-translate-1 justify-center">
+                        <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">Download Whitepapers Now</p>
+                        <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+                    </button>
+                    <div class="sbox flex gap-3 bg-dark10 border-1 border-dark15 p-5 mt-10 w-fit rounded-xl flex-wrap">
+                        <div class="text w-fit">
+                            <p class="text-grey60 text-sm font-inter">Downloaded By</p>
+                            <p class="text-white text-lg font-inter font-semibold mt-1">10k + Users</p>
+                        </div>
+                        <div class="faces flex max-xl:w-[150px] rounded-xl bg-dark08 w-fit justify-center py-2" >
+                            <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden translate-x-4  max-h-12">
+                                <img src="imgs/formal_home1.png" class="w-12" alt="">
+                            </div>
+                            <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden z-20 translate-x-1  max-h-12">
+                                <img src="imgs/formal_home2.png" class="w-12" alt="">
+                            </div>
+                            <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden z-30 -translate-x-2 max-h-12">
+                                <img src="imgs/formal_home3.png" class="w-12" alt="">
+                            </div>
+                            <div class="photo bg-[#262626] border-2 border-dark40 rounded-full overflow-hidden z-40 -translate-x-4 max-h-12">
+                                <img src="imgs/formal_home4.png" class="w-12" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box lg:py-20 lg:pl-14 lg:flex-2">
+                    <div class="text flex justify-between items-center mb-5 flex-wrap">
+                        <p class="text-white font-inter font-semibold text-lg md:flex-1">Topics Coverage</p>
+                        <p class="text-grey60 font-inter text-[12px] leading-5 md:flex-2 max-md:mt-2">
+                            Whitepapers cover quantum computing (20%), AI ethics (15%), space mining prospects (20%), AI in healthcare (15%), and renewable energy strategies (30%).
+                        </p>
+                    </div>
+                    <img src="imgs/Image2.webp" class="rounded-xl" alt="">
+                    <div class="minbox flex mt-5 gap-3 flex-wrap max-md:flex-col">
+                        <div class="inside max-md:flex-1 p-5 md:w-fit bg-dark10 border-1 border-dark15 rounded-xl">
+                            <p class="font-inter text-[12px] text-grey60">Total Whitepapers</p>
+                            <p class="text-white font-inter font-medium text-sm mt-1">Over 50 whitepapers</p>
+                        </div>
+                        <div class="inside flex-2 w-full flex flex-wrap gap-5 justify-between p-5 bg-dark10 border-1 border-dark15 rounded-xl">
+                            <div class="text">
+                                <p class="font-inter text-[12px] text-grey60">Download Formats</p>
+                                <p class="text-white font-inter font-medium text-sm mt-1">PDF format for access.</p>
+                            </div>
+                            <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55">
+                                <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">Preview</p>
+                                <i class="fa-solid fa-eye text-yellow55"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="full p-5 bg-dark10 border-1 border-dark15 rounded-xl w-full my-5 max-lg:mb-10">
+                        <p class="font-inter text-[12px] text-grey60">Average Author Expertise</p>
+                        <p class="text-white font-inter font-medium text-sm mt-1">Whitepapers are authored by subject matter experts with an average of 20 years of experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="future container px-10 mx-auto bg-dark10 py-20 flex justify-between items-center flex-wrap gap-5">
+            <div class="text max-xl:mb-8">
+                <p class="bg-dark20 font-inter font-medium text-white w-fit py-1 px-2.5 text-base max-md:text-[12px] rounded-[4px]">What Our Readers Say</p>
+                <h2 class="font-kumbh font-medium text-5xl/tight max-lg:text-4xl/tight max-md:text-2xl/tight text-white mt-7 max-w-3xl">Real Words from Real Readers</h2>
+            </div>
+            <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55 hover:shadow-btn hover:translate-x-1 hover:-translate-1">
+                <p class="font-inter text-grey60 mr-2 text-sm max-xl:text-[12px] group-hover:text-white transition-all duration-[0.3s]">View All Testimonials</p>
+                <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 animate-up"></i>
+            </button>
+        </section>
+        <section class="readers bg-dark08 container mx-auto">
+            <div class="content grid grid-cols-[repeat(auto-fill,minmax(450px,1fr))] max-md:grid-cols-1">
+                <div class="box px-10 py-14 flex items-center flex-col border-1 border-grey50/10">
+                    <div class="sbox flex gap-3 text-center justify-center">
+                        <div class="image bg-white rounded-full overflow-hidden flex justify-center items-center h-fit">
+                            <img src="imgs/formal_home1.png" class="w-12" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="text-white text-sm font-inter font-medium">Sarah Thompson</p>
+                            <p class="text-[12px] text-dark40 font-inter mt-2">San Francisco, USA</p>
+                        </div>
+                    </div>
+                    <div class="minbox w-fit p-6 bg-dark10 border-1 border-dark15 mt-10 relative rounded-xl">
+                        <ul class="flex justify-center items-center w-fit gap-1 py-2 px-3 rounded-full border-1 border-dark15 absolute left-1/2 -top-5 -translate-x-1/2 bg-dark08">
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                        </ul>
+                        <p class="text-white max-w-[330px] font-inter text-center text-sm/normal mt-5">
+                            The ebooks on AI in education have been a game-changer for my research. They provide in-depth insights and case studies that are invaluable for staying updated.
+                        </p>
+                    </div>
+                </div>
+                <div class="box px-10 py-14 flex items-center flex-col border-1 border-grey50/10">
+                    <div class="sbox flex gap-3 text-center justify-center">
+                        <div class="image bg-white rounded-full overflow-hidden flex justify-center items-center h-fit">
+                            <img src="imgs/formal_home2.png" class="w-12" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="text-white text-sm font-inter font-medium">Raj Patel</p>
+                            <p class="text-[12px] text-dark40 font-inter mt-2">Mumbai, India</p>
+                        </div>
+                    </div>
+                    <div class="minbox w-fit p-6 bg-dark10 border-1 border-dark15 mt-10 relative rounded-xl">
+                        <ul class="flex justify-center items-center w-fit gap-1 py-2 px-3 rounded-full border-1 border-dark15 absolute left-1/2 -top-5 -translate-x-1/2 bg-dark08">
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                        </ul>
+                        <p class="text-white max-w-[330px] font-inter text-center text-sm/normal mt-5">
+                            The whitepapers on renewable energy strategies have greatly influenced my work. They offer detailed data and analysis, helping me make informed decisions.
+                        </p>
+                    </div>
+                </div>
+                <div class="box px-10 py-14 flex items-center flex-col border-1 border-grey50/10">
+                    <div class="sbox flex gap-3 text-center justify-center">
+                        <div class="image bg-white rounded-full overflow-hidden flex justify-center items-center h-fit">
+                            <img src="imgs/formal_home3.png" class="w-12" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="text-white text-sm font-inter font-medium">Emily Adams</p>
+                            <p class="text-[12px] text-dark40 font-inter mt-2">London, UK</p>
+                        </div>
+                    </div>
+                    <div class="minbox w-fit p-6 bg-dark10 border-1 border-dark15 mt-10 relative rounded-xl">
+                        <ul class="flex justify-center items-center w-fit gap-1 py-2 px-3 rounded-full border-1 border-dark15 absolute left-1/2 -top-5 -translate-x-1/2 bg-dark08">
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                        </ul>
+                        <p class="text-white max-w-[330px] font-inter text-center text-sm/normal mt-5">
+                            The AI in healthcare reports have been an essential resource for our hospital. They highlight the latest innovations and best practices, improving patient care.
+                        </p>
+                    </div>
+                </div>
+                <div class="box px-10 py-14 flex items-center flex-col border-1 border-grey50/10">
+                    <div class="sbox flex gap-3 text-center justify-center">
+                        <div class="image bg-white rounded-full overflow-hidden flex justify-center items-center h-fit">
+                            <img src="imgs/formal_home4.png" class="w-12" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="text-white text-sm font-inter font-medium">Alan Jackson</p>
+                            <p class="text-[12px] text-dark40 font-inter mt-2">Houston, USA</p>
+                        </div>
+                    </div>
+                    <div class="minbox w-fit p-6 bg-dark10 border-1 border-dark15 mt-10 relative rounded-xl">
+                        <ul class="flex justify-center items-center w-fit gap-1 py-2 px-3 rounded-full border-1 border-dark15 absolute left-1/2 -top-5 -translate-x-1/2 bg-dark08">
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                        </ul>
+                        <p class="text-white max-w-[330px] font-inter text-center text-sm/normal mt-5">
+                            The reports on space mining prospects have fueled my passion for space exploration. They provide a comprehensive view of what lies beyond Earth.
+                        </p>
+                    </div>
+                </div>
+                <div class="box px-10 py-14 flex items-center flex-col border-1 border-grey50/10">
+                    <div class="sbox flex gap-3 text-center justify-center">
+                        <div class="image bg-white rounded-full overflow-hidden flex justify-center items-center h-fit">
+                            <img src="imgs/formal_home1.png" class="w-12" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="text-white text-sm font-inter font-medium">Jessica Miller</p>
+                            <p class="text-[12px] text-dark40 font-inter mt-2">Boston, USA</p>
+                        </div>
+                    </div>
+                    <div class="minbox w-fit p-6 bg-dark10 border-1 border-dark15 mt-10 relative rounded-xl">
+                        <ul class="flex justify-center items-center w-fit gap-1 py-2 px-3 rounded-full border-1 border-dark15 absolute left-1/2 -top-5 -translate-x-1/2 bg-dark08">
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                        </ul>
+                        <p class="text-white max-w-[330px] font-inter text-center text-sm/normal mt-5">
+                            The research papers on genomic breakthroughs have been a goldmine of information. They've shaped the direction of my research in genomics.
+                    </div>
+                </div>
+                <div class="box px-10 py-14 flex items-center flex-col border-1 border-grey50/10">
+                    <div class="sbox flex gap-3 text-center justify-center">
+                        <div class="image bg-white rounded-full overflow-hidden flex justify-center items-center h-fit">
+                            <img src="imgs/formal_home2.png" class="w-12" alt="">
+                        </div>
+                        <div class="text">
+                            <p class="text-white text-sm font-inter font-medium">Diego Lopez</p>
+                            <p class="text-[12px] text-dark40 font-inter mt-2">Barcelona, Spain</p>
+                        </div>
+                    </div>
+                    <div class="minbox w-fit p-6 bg-dark10 border-1 border-dark15 mt-10 relative rounded-xl">
+                        <ul class="flex justify-center items-center w-fit gap-1 py-2 px-3 rounded-full border-1 border-dark15 absolute left-1/2 -top-5 -translate-x-1/2 bg-dark08">
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                            <li><i class="fa-solid fa-star text-yellow55"></i></li>
+                        </ul>
+                        <p class="text-white max-w-[330px] font-inter text-center text-sm/normal mt-5">
+                            The ebooks on renewable energy strategies have given me the insights I needed to pivot our startup toward sustainability.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-dark10 container mx-auto px-10 py-24">
+            <div class="box flex flex-wrap items-center gap-14">
+                <img src="imgs/big_Logo.png" class="max-w-[120px]" alt="">
+                <div class="text">
+                    <p class="bg-dark20 font-inter font-medium text-white w-fit py-1 px-2.5 text-base max-md:text-[12px] rounded-[4px]">Learn, Connect, and Innovate</p>
+                    <h2 class="font-kumbh font-medium text-5xl max-lg:text-4xl max-md:text-2xl text-white mt-7">Be Part of the Future Tech Revolution</h2>
+                    <p class="text-[12px] font-inter text-grey50 mt-8 max-w-[1000px] leading-5">
+                        Immerse yourself in the world of future technology. Explore our comprehensive resources, connect with fellow tech enthusiasts, and drive innovation in the industry. Join a dynamic community of forward-thinkers.
+                    </p>
+                </div>
+            </div>
+            <div class="box flex flex-wrap gap-3 bg-dark08 border-1 border-dark15 p-3 mt-24 rounded-xl">
+                <div class="sbox md:flex-1 max-md:w-full bg-dark10 border-1 border-dark15 p-7 w-fit rounded-xl">
+                    <div class="text flex justify-between items-center gap-3">
+                        <p class="text-white text-base font-inter font-semibold">Resource Access</p>
+                        <div class="icon w-10 min-w-10 h-10 bg-yellow55 flex justify-center items-center rounded-full hover:scale-110 hover:shadow-[0_0_5px_#FFD11A] transition-all duration-[0.4s] cursor-pointer">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-black text-[12px] animate-up"></i>
+                        </div>
+                    </div>
+                    <p class="font-inter text-[12px] text-grey60 mt-4 max-w-[300px] leading-4.5">Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
+                </div>
+                <div class="sbox md:flex-1 max-md:w-full bg-dark10 border-1 border-dark15 p-7 w-fit rounded-xl">
+                    <div class="text flex justify-between items-center gap-3">
+                        <p class="text-white text-base font-inter font-semibold">Resource Access</p>
+                        <div class="icon w-10 min-w-10 h-10 bg-yellow55 flex justify-center items-center rounded-full hover:scale-110 hover:shadow-[0_0_5px_#FFD11A] transition-all duration-[0.4s] cursor-pointer">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-black text-[12px] animate-up"></i>
+                        </div>
+                    </div>
+                    <p class="font-inter text-[12px] text-grey60 mt-4 max-w-[300px] leading-4.5">Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
+                </div>
+                <div class="sbox md:flex-1 max-md:w-full bg-dark10 border-1 border-dark15 p-7 w-fit rounded-xl">
+                    <div class="text flex justify-between items-center gap-3">
+                        <p class="text-white text-base font-inter font-semibold">Resource Access</p>
+                        <div class="icon w-10 min-w-10 h-10 bg-yellow55 flex justify-center items-center rounded-full hover:scale-110 hover:shadow-[0_0_5px_#FFD11A] transition-all duration-[0.4s] cursor-pointer">
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-black text-[12px] animate-up"></i>
+                        </div>
+                    </div>
+                    <p class="font-inter text-[12px] text-grey60 mt-4 max-w-[300px] leading-4.5">Visitors can access a wide range of resources, including ebooks, whitepapers, reports.</p>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-dark08 container mx-auto px-16 max-md:px-10 pt-16 pb-8">
+            <div class="content flex flex-wrap justify-between gap-8 max-md:flex-col">
+                <div class="box">
+                    <p class="text-sm text-white font-inter font-medium">Home</p>
+                    <ul class="mt-5">
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55">Features</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Blogs</p></li>
+                        <li class="flex items-center gap-2 mt-2.5">
+                            <p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 ">Resources</p>
+                            <p class="text-[12px] text-white p-1.5 border-1 border-yellow55 bg-dark10 rounded-lg">New</p>
+                        </li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Testimonials</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Contact Us</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Newsletter</p></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p class="text-sm text-white font-inter font-medium">News</p>
+                    <ul class="mt-5">
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55">Trending Stories</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Featured Videos</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Technology</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Health</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Politics</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Environment</p></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p class="text-sm text-white font-inter font-medium">Blogs</p>
+                    <ul class="mt-5">
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55">Quantum Computing</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">AI Ethics</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Space Exploration</p></li>
+                        <li class="flex items-center gap-2 mt-2.5">
+                            <p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 ">Biotechnology</p>
+                            <p class="text-[12px] text-white p-1.5 border-1 border-yellow55 bg-dark10 rounded-lg">New</p>
+                        </li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Renewable Energy</p></li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">Biohacking</p></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p class="text-sm text-white font-inter font-medium">Podcasts</p>
+                    <ul class="mt-5">
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55">AI Revolution</p></li>
+                        <li class="flex items-center gap-2 mt-2.5">
+                            <p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 ">TechTalk AI</p>
+                            <p class="text-[12px] text-white p-1.5 border-1 border-yellow55 bg-dark10 rounded-lg">New</p>
+                        </li>
+                        <li><p class="text-dark40 font-inter text-sm transition-all duration-[0.3s] cursor-pointer hover:text-yellow55 mt-2.5">AI Conversations</p></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p class="text-sm text-white font-inter font-medium">Resources</p>
+                    <div class="sbox mt-5">
+                        <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55">
+                            <p class="font-inter text-grey60 mr-2 text-[12px] group-hover:text-white transition-all duration-[0.3s]">Whitepapers</p>
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 text-[12px] animate-up"></i>
+                        </button>
+                    </div>
+                    <div class="sbox mt-2.5">
+                        <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55">
+                            <p class="font-inter text-grey60 mr-2 text-[12px] group-hover:text-white transition-all duration-[0.3s]">Ebooks</p>
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 text-[12px] animate-up"></i>
+                        </button>
+                    </div>
+                    <div class="sbox mt-2.5">
+                        <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55">
+                            <p class="font-inter text-grey60 mr-2 text-[12px] group-hover:text-white transition-all duration-[0.3s]">Reports</p>
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 text-[12px] animate-up"></i>
+                        </button>
+                    </div>
+                    <div class="sbox mt-2.5">
+                        <button class="border-dark15 p-3 cursor-pointer border-1 rounded-lg flex items-center group transition-all duration-[0.4s] hover:border-yellow55">
+                            <p class="font-inter text-grey60 mr-2 text-[12px] group-hover:text-white transition-all duration-[0.3s]">Research Papers</p>
+                            <i class="fa-solid fa-arrow-right -rotate-45 text-yellow55 text-[12px] animate-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="content flex flex-wrap justify-between gap-3 mt-16 pt-8 border-t-1 border-t-grey50/20">
+                <div class="box flex gap-2.5">
+                    <p class="text-[12px] font-inter text-dark40">Terms & Conditions</p>
+                    <p class="text-[12px] font-inter text-dark40">Privacy Policy</p>
+                </div>
+                <div class="box">
+                    <ul class="flex gap-2">
+                        <li><i class="fa-brands fa-facebook text-white cursor-pointer transition-all duration-[0.3s] hover:text-yellow55"></i></li>
+                        <li><i class="fa-brands fa-linkedin text-white cursor-pointer transition-all duration-[0.3s] hover:text-yellow55"></i></li>
+                        <li><i class="fa-brands fa-github text-white cursor-pointer transition-all duration-[0.3s] hover:text-yellow55"></i></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <p class="text-[12px] font-inter text-dark40">&copy;2024 FutureTech. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
